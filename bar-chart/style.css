@@ -1,7 +1,11 @@
-div {
+.myBars {
+  display: flex;
+  align-items: flex-end;
+}
+
+.bar {
   height: 200px;
-  width: 50px;
+  width: calc(100% / 40);
   background-color: skyblue;
-  margin: 1em;
-  display: inline-block;
+  border: 1px black solid;
 }
