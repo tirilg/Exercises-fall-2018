@@ -1,0 +1,8 @@
+div {
+  height: 10em;
+  width: 1em;
+  background-color: skyblue;
+  padding: 1em;
+  margin: 1em;
+  display: inline-block;
+}
