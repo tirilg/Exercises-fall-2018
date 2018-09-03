@@ -8,14 +8,15 @@ const fullName = "Peter Heronimous Lind";
 const firstSpace = fullName.indexOf(" ");
 const firstName = fullName.substring(0, firstSpace);
 
-const secondSpace = fullName.indexOf(" ", firstSpace + 1);
-const middleName = fullName.substring(6, secondSpace);
+const secondSpace = fullName.indexOf(" ", firstSpace + 1); //or use .trim();
+const middleName = fullName.substring(firstSpace + 1, secondSpace);
 
-const lastName = fullName.substring(16 + 1);
+const lastName = fullName.substring(secondSpace + 1);
 
 console.log(`firstspace at ${firstSpace}`);
 console.log(`secondspace at ${secondSpace}`);
 
-console.log(firstName);
-console.log(middleName);
-console.log(lastName);
+console.log(`
+First name: ${firstName}
+Middle name: ${middleName}
+Last name: ${lastName}`);
