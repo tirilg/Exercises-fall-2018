@@ -10,6 +10,20 @@ const weasleys = [
   "Ginny"
 ];
 
+const animals = ["Cat", "Dog", "Cat", "Cat", "Dog", "Cat", "Dog", "Dog", "Cat"];
+
+function removeCats(arr, search) {
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] === search) {
+      arr.splice(i, 1);
+      i--; //removes the last cat left
+    }
+  }
+}
+
+removeCats(animals, "Cat");
+console.log(animals);
+
 function display(arr) {
   for (let i = 0; i < arr.length; i++) {
     //console.log(arr[i]);
